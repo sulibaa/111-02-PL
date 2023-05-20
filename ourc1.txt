@@ -1,0 +1,28 @@
+注意事項 or 一些小技巧
+
+因為不能使用break，設定一個bool在主迴圈:
+bool continue_run ;
+while ( continue_run )
+來解決遇到quit之類的問題
+
+try / catch / throw 是你的好朋友
+try{
+//正常情況
+}
+catch{
+//錯誤情況
+}
+此外還能多重catch
+1.try{
+2.  console.log(1) // cout << "1"
+3.}
+4.catch( case1 e ){
+5.  console.log(e.message) // cout << "case1"
+6.}
+7.catch( case2 e ){
+8.}
+.
+.
+.
+201.throw case1( "case1" ) // 執行第4行 
+網址: https://ithelp.ithome.com.tw/articles/10208079
